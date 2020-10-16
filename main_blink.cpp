@@ -29,7 +29,7 @@ int main(void){
 	GPIOB->PUPDR |= (2UL<<0*2) | (2UL<<7*2) | (2UL<<14*2);
 	
 	/*
-		100 ms
+		100 ms T = 10 Hz
 	*/
 	SystemCoreClockUpdate();
 	SysTick_Config(SystemCoreClock/10); 
